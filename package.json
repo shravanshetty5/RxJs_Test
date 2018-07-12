@@ -4,8 +4,20 @@
   "description": "Test RxJs application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --watch --inline",
+    "postinstall": "typings install"
   },
   "author": "Shravan Shetty",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.2.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "typings": "^2.1.1",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
 }
